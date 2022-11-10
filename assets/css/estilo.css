@@ -31,6 +31,8 @@ body{
     border-radius:20px;
     background-color:rgb(75, 71, 71);
     color:#fff;
+    outline:0;
+    box-shadow:0;
 }
 #apresentacao button:hover{
     background-color:rgb(53, 46, 46);
@@ -72,6 +74,8 @@ body{
     border-radius:20px;
     background-color:#000;
     color:#fff;
+    outline:0;
+    box-shadow:0;
 }
 #sobre-mim button:hover{
     cursor:pointer;
@@ -129,7 +133,7 @@ body{
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    gap:4em;
+    gap:2em;
 }
 #social{
     display:flex;
@@ -159,8 +163,11 @@ footer{
 
 
 @media screen and (max-width:600px){
+    body{
+        gap:1em;
+    }
     #apresentacao h1{
-        font-size:3em;
+        font-size:2em;
     }
     #sobre-mim p{
         font-size:1.2em;
@@ -173,5 +180,12 @@ footer{
     }
     #projetos{
         background-color:#F2F2F2;
+    }
+    #contate-me{
+        gap:1em;
+    }
+    #social{
+        align-items:center;
+        gap:2em;
     }
 }
