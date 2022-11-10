@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    font-family:'poppins', Arial, sans-serif;
+}
+/*AREA DE APRESENTAÇÃO*/
+
+#apresentacao{
+    background-color:#000;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:1em;
+    height:50vh;
+}
+#apresentacao h1{
+    font-size:4em;
+    color:#fff;
+}
+#apresentacao h4{
+    color:#fff;
+}
+#apresentacao button{
+    padding:0.5em;
+    border-radius:20px;
+    background-color:rgb(75, 71, 71);
+    color:#fff;
+}
+#apresentacao button:hover{
+    background-color:rgb(53, 46, 46);
+    color:rgb(134, 134, 248);
+    cursor:pointer;
+    transition:0.5s;
+}
+/*FIM APRESENTAÇÃO*/
+
+/*SOBRE MIM*/
+#sobre-mim{
+    height:70vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:1em;
+}
+#eu{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+#eu h2{
+    font-weight:bold;
+}
+#eu p{
+    padding:1em;
+    text-align:justify;
+    font-size:2em;
+    font-weight:bold;
+}
+#eu img{
+    width:200px;
+}
+#sobre-mim button{
+    padding:0.5em;
+    border:none;
+    border-radius:20px;
+    background-color:#000;
+    color:#fff;
+}
+#sobre-mim button:hover{
+    cursor:pointer;
+    background-color:rgb(53, 46, 46);
+    color:rgb(134, 134, 248); 
+    transition:0.5s;  
+}
+/*FIM SOBRE MIM*/
+
+/*MEUS PROJETOS*/
+#projetos{
+    display:flex;
+    flex-direction:column;
+}
+#resumo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+#resumo p{
+    font-size:2em;
+    font-weight:bold;
+    text-align:justify;
+    padding:1em;
+}
+#trabalhos{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2em;
+    align-items:center;
+    justify-content:space-around;
+}
+.job{
+    width:400px;
+    overflow:hidden;
+}
+.job img{
+    width:400px;
+}
+.job p{
+    font-weight:bold;
+    text-align:center;
+}
+.job img:hover{
+    transition:1s;
+    transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform:scale(1.1,1);
+    cursor:pointer;
+}
+
+#contate-me{
+    padding:2em;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:4em;
+}
+#social{
+    display:flex;
+    align-items:center;
+    gap:6em;
+}
+#social a{
+    padding:0.2em 0.5em;
+    border-radius:5px;
+    color:#000;
+}
+#social a:hover{
+    color:#fff;
+    background-color:#000;
+    transition:0.5s;
+}
+footer{
+    padding:1em;
+    background-color:#000;
+    color:#fff;
+    text-align:center;
+}
+
+
+
+
+
+
+@media screen and (max-width:600px){
+    #apresentacao h1{
+        font-size:3em;
+    }
+    #sobre-mim p{
+        font-size:1.2em;
+    }
+    #sobre-mim img{
+        width:150px;
+    }
+    #resumo p{
+        font-size:1.2em;
+    }
+    #projetos{
+        background-color:#F2F2F2;
+    }
+}
