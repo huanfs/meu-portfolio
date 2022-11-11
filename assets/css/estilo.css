@@ -54,7 +54,7 @@ body{
 #eu{
     display:flex;
     align-items:center;
-    justify-content:space-evenly;
+    /*justify-content:space-evenly;*/
 }
 #eu h2{
     font-weight:bold;
@@ -62,7 +62,7 @@ body{
 #eu p{
     padding:1em;
     text-align:justify;
-    font-size:2em;
+    font-size:1.5em;
     font-weight:bold;
 }
 #eu img{
@@ -97,7 +97,7 @@ body{
     justify-content:center;
 }
 #resumo p{
-    font-size:2em;
+    font-size:1.5em;
     font-weight:bold;
     text-align:justify;
     padding:1em;

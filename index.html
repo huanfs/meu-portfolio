@@ -13,7 +13,9 @@
     <section id="apresentacao">
         <h1>Huan Figuereido</h1>
         <h4>Desenvolvedor Front-End JR.</h4>
-        <button>Curriculo Completo</button>
+        <button onclick="window.open('assets/img/curriculo.pdf')">
+            Curriculo Completo
+        </button>
     </section>
     <!--FIM DA AREA DE APRESENTAÇÃO-->
 
@@ -21,14 +23,15 @@
     <section id="sobre-mim">
         <h2>SOBRE MIM</h2>
         <div id="eu">
-        <p>
+        <p id="maissobremim">
             Eu me chamo Ruan, estudo programação voltada para a <em>Web</em> 
             há pouco mais de um ano e desde então eu crio <em>"coisas"</em> 
             para a internet. Sinta-se a vontade para conferir alguns dos meus 
             projetos.
         </p>
+        <!--<div id="maissobremim"></div>!-->
         </div>
-        <button>
+        <button id="btn" onclick="SobreMim()">
             Mais Sobre Mim
         </button>
     </section>
@@ -90,5 +93,6 @@
     </footer>
 
     <!--PRECISO CRIAR O RODAPÉ QUE IRÁ CONTER OS ICONES DE LINKS PARA AS MINHAS REDES SOCIAIS, CONTATE-ME!-->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
