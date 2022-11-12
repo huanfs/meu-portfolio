@@ -161,13 +161,15 @@ footer{
 
 
 
-
 @media screen and (max-width:600px){
     body{
         gap:1em;
     }
     #apresentacao h1{
         font-size:2em;
+    }
+    #sobre-mim{
+        height:90vh;
     }
     #sobre-mim p{
         font-size:1.2em;
@@ -180,6 +182,14 @@ footer{
     }
     #projetos{
         background-color:#F2F2F2;
+    }
+    .job{
+        width:350px;
+        overflow:hidden;
+    }
+    .job img{
+        border-radius:5px;
+        width:350px;
     }
     #contate-me{
         gap:1em;

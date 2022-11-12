@@ -9,9 +9,9 @@ function SobreMim(){
     endereço este ao qual resido atualmente e busco uma oportunidade de ingressar
     na área de tecnologia de forma profissional exercendo com segurança e confiança
     todos os meus aprendizados nas tecnologias HTML5, CSS3, JavaSript e GIT/GitHub.
-    além de estar estudando Bootstrap,Node.js e futuramente React.js. Venho por meio
-    deste portólio exibir alguns dos meus projetos onde este portólio também foi
-    criado por mim, tornando-o também um projeto meu.`;
-    mais.style.fontSize='1.5em';
+    além de estar estudando Bootstrap,Node.js e futuramente React.js.`;
+    mais.style.fontSize='1.1em';
     botao.style.display='none';
+
+
 }
