@@ -170,12 +170,14 @@ footer{
     }
     #sobre-mim{
         height:90vh;
+        gap:0;
     }
     #sobre-mim p{
         font-size:1.2em;
     }
     #sobre-mim img{
         width:150px;
+        border-radius:5px;
     }
     #resumo p{
         font-size:1.2em;
