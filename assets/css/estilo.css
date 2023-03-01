@@ -17,7 +17,7 @@ body{
     align-items:center;
     justify-content:center;
     gap:1em;
-    height:50vh;
+    height:45vh;
 }
 #apresentacao h1{
     font-size:4em;
@@ -31,12 +31,13 @@ body{
     border-radius:20px;
     background-color:rgb(75, 71, 71);
     color:#fff;
+    border:none;
     outline:0;
     box-shadow:0;
+    font-size:1em;
 }
 #apresentacao button:hover{
-    background-color:rgb(53, 46, 46);
-    color:rgb(134, 134, 248);
+    background-color:rgb(31, 31, 228);
     cursor:pointer;
     transition:0.5s;
 }
@@ -44,12 +45,12 @@ body{
 
 /*SOBRE MIM*/
 #sobre-mim{
-    height:70vh;
+    height:60vh;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    gap:1em;
+    margin:-50px 0;
 }
 #eu{
     display:flex;
@@ -76,15 +77,45 @@ body{
     color:#fff;
     outline:0;
     box-shadow:0;
+    font-size:1em;
 }
 #sobre-mim button:hover{
     cursor:pointer;
-    background-color:rgb(53, 46, 46);
-    color:rgb(134, 134, 248); 
+    background-color:rgb(31, 31, 228);
+    /* background-color:rgb(53, 46, 46);
+    color:rgb(134, 134, 248);  */
     transition:0.5s;  
 }
 /*FIM SOBRE MIM*/
-
+/*MINHAS HABILIDADES*/
+#habilidades{
+    height:30vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2em;
+}
+#habilidade{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:2em;
+}
+.hab{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:0.1em;
+}
+.hab span{
+    font:normal 0.8em Arial;
+}
+#habilidade img{ 
+    height:90px; 
+}
+/*FIM MINHAS HABILIDADES*/
 /*MEUS PROJETOS*/
 #projetos{
     display:flex;
@@ -138,7 +169,8 @@ body{
 #social{
     display:flex;
     align-items:center;
-    gap:6em;
+    gap:4em;
+    font-size:1.8em;
 }
 #social a{
     padding:0.2em 0.5em;
@@ -163,14 +195,13 @@ footer{
 
 @media screen and (max-width:600px){
     body{
-        gap:1em;
+        gap:5em;
     }
     #apresentacao h1{
         font-size:2em;
     }
     #sobre-mim{
-        height:90vh;
-        gap:0;
+        height:80vh;
     }
     #sobre-mim p{
         font-size:1.1em;
@@ -181,6 +212,12 @@ footer{
     }
     #resumo p{
         font-size:1.1em;
+    }
+    #habilidade{
+        gap:1em;
+    }
+    #habilidade img{ 
+        height:66px; 
     }
     #projetos{
         background-color:#F2F2F2;
@@ -194,10 +231,11 @@ footer{
         width:350px;
     }
     #contate-me{
+        height:100px;
         gap:1em;
     }
     #social{
         align-items:center;
-        gap:2em;
+        gap:1.5em;
     }
 }
