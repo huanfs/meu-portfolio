@@ -7,6 +7,7 @@ body{
     display:flex;
     flex-direction:column;
     font-family:'poppins', Arial, sans-serif;
+    min-width:450px;
 }
 /*AREA DE APRESENTAÇÃO*/
 
@@ -87,6 +88,7 @@ body{
     transition:0.5s;  
 }
 /*FIM SOBRE MIM*/
+
 /*MINHAS HABILIDADES*/
 #habilidades{
     height:30vh;
@@ -116,6 +118,7 @@ body{
     height:90px; 
 }
 /*FIM MINHAS HABILIDADES*/
+
 /*MEUS PROJETOS*/
 #projetos{
     display:flex;
@@ -154,10 +157,9 @@ body{
 .job img:hover{
     transition:1s;
     transition-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transform:scale(1.1,1);
+    transform:scale(1.1,1.1);
     cursor:pointer;
 }
-
 #contate-me{
     padding:2em;
     display:flex;
@@ -188,11 +190,7 @@ footer{
     color:#fff;
     text-align:center;
 }
-
-
-
-
-
+/* MEDIA SCREENS */
 @media screen and (max-width:600px){
     body{
         gap:5em;
@@ -210,6 +208,9 @@ footer{
         width:150px;
         border-radius:5px;
     }
+    #sobre-mim button{
+        box-shadow:2px 2px 3px #000000b3;
+    }
     #resumo p{
         font-size:1.1em;
     }
@@ -217,7 +218,8 @@ footer{
         gap:1em;
     }
     #habilidade img{ 
-        height:66px; 
+        filter:drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.701));
+        height:55px; 
     }
     #projetos{
         background-color:#F2F2F2;
