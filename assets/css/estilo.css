@@ -7,7 +7,6 @@ body{
     display:flex;
     flex-direction:column;
     font-family:'poppins', Arial, sans-serif;
-    min-width:450px;
 }
 /*AREA DE APRESENTAÇÃO*/
 
@@ -145,10 +144,14 @@ body{
 }
 .job{
     width:400px;
+}
+.joboverflow{
+    height:200px;
     overflow:hidden;
 }
 .job img{
     width:400px;
+    height:100%;
 }
 .job p{
     font-weight:bold;
@@ -222,7 +225,8 @@ footer{
         height:55px; 
     }
     #projetos{
-        background-color:#F2F2F2;
+        /* background-color:#F2F2F2; */
+        background:linear-gradient(to bottom, #f2f2f2, #fff);
     }
     .job{
         width:350px;
