@@ -5,6 +5,7 @@
     padding:0px;
 }
 body{
+    min-width:400px;
     font-family:Montserrat, Poppins, sans-serif;
     animation-name:load;
     animation-duration:1s;
@@ -55,12 +56,11 @@ body{
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    margin:-50px 0;
 }
 #eu{
     display:flex;
     align-items:center;
-    /*justify-content:space-evenly;*/
+    flex-direction:row-reverse;
 }
 #eu h2{
     font-weight:bold;
@@ -216,9 +216,6 @@ footer{
     #apresentacao h1{
         font-size:2em;
     }
-    #sobre-mim{
-        height:80vh;
-    }
     #sobre-mim p{
         font-size:1.1em;
     }
@@ -228,6 +225,9 @@ footer{
     }
     #sobre-mim button{
         box-shadow:2px 2px 3px #000000b3;
+    }
+    #eu{
+        flex-direction:column-reverse;
     }
     #resumo p{
         font-size:1.1em;

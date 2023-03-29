@@ -1,8 +1,8 @@
-
 function SobreMim(){
     let botao=document.getElementById('btn');
     let mais=document.getElementById('maissobremim');
-    let sobre=document.querySelector("#sobre-mim h2");
+    let sobreMim = document.querySelector("#sobre-mim");
+    let eu=document.querySelector("#eu");
     mais.innerHTML=`Eu comecei a estudar programação para ver como era á area
     e caso eu gostasse dela eu seguiria estudando. isso foi há mais de um ano atrás
     e hoje estou aqui escrevendo sobre mim no meu portfólio que EU mesmo criei
@@ -14,9 +14,18 @@ function SobreMim(){
     mais.style.fontSize='1.2em';
     mais.style.marginTop="20px";
     botao.style.display='none';
-    sobre.style.marginBottom="-30px";
+    sobreMim.style.height="100vh";
+    // criação da minha foto na area sobre mim
+    let foto = document.createElement("img");
+    eu.appendChild(foto);
+    foto.src="cachorro.png";
+    foto.style.marginTop="20px;"
+    foto.style.filter="drop-shadow:5px 5px 10px;";
     //adicionando animação
     mais.animate([{opacity:0},{opacity:1}], {
         duration: 1000,
       });
+    foto.animate([{opacity:0},{opacity:1}], {
+        duration: 1000,
+      });    
 }
