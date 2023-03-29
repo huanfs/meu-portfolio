@@ -10,12 +10,13 @@ body{
     animation-duration:1s;
     display:flex;
     flex-direction:column;
-    align-items:top;   
+    align-items:top; 
+    background:linear-gradient(to bottom, #D8D8D8, #fff); 
 }
 /*AREA DE APRESENTAÇÃO*/
 
 #apresentacao{
-    background-color:#000;
+    background-color:#051014;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -126,13 +127,14 @@ body{
 #projetos{
     display:flex;
     flex-direction:column;
-    background:linear-gradient(to bottom, #f2f2f2, #fff);
+    background:linear-gradient(to bottom, #D8D8D8, #fff);
 }
 #resumo{
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
+    margin-top:30px;
 }
 #resumo p{
     font-size:1.5em;
@@ -177,6 +179,7 @@ body{
 } 
 #contate-me{
     padding:2em;
+    margin-top:30px;
     display:flex;
     flex-direction:column;
     align-items:center;
