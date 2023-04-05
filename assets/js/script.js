@@ -10,7 +10,7 @@ function SobreMim(){
     endereço este ao qual resido atualmente e busco uma oportunidade de ingressar
     na área de tecnologia de forma profissional exercendo com segurança e confiança
     todos os meus aprendizados nas tecnologias HTML5, CSS3, JavaSript e GIT/GitHub.
-    além de estar estudando Bootstrap,Node.js e futuramente React.js.`;
+    além de estar estudando Bootstrap,Node.js e futuramente Vue.js.`;
     mais.style.fontSize='1.2em';
     mais.style.marginTop="20px";
     botao.style.display='none';
@@ -26,6 +26,6 @@ function SobreMim(){
         duration: 1000,
       });
     foto.animate([{opacity:0},{opacity:1}], {
-        duration: 1000,
+        duration: 800,
       });    
 }

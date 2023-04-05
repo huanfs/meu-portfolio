@@ -12,7 +12,7 @@ body{
     display:flex;
     flex-direction:column;
     align-items:top; 
-    background:linear-gradient(to bottom, #D8D8D8, #fff); 
+    background:linear-gradient(to bottom, #D8D8D8, #fff);
 }
 /*AREA DE APRESENTAÇÃO*/
 
@@ -127,7 +127,6 @@ body{
 #projetos{
     display:flex;
     flex-direction:column;
-    background:linear-gradient(to bottom, #D8D8D8, #fff);
 }
 #resumo{
     display:flex;
@@ -204,7 +203,6 @@ body{
 }
 footer{
     padding:1em;
-    background-color:#000;
     color:#fff;
     text-align:center;
 }
@@ -212,9 +210,19 @@ footer{
 @media screen and (max-width:800px){
     body{
         gap:5em;
+        background:linear-gradient(to bottom, #bcfebc, #f6fef6);
+    }
+    #apresentacao{
+        background-color:#002400;
     }
     #apresentacao h1{
         font-size:2em;
+    }
+    #apresentacao button{
+        background-color:#006400;
+    }
+    #apresentacao button:hover{
+        background-color:#008000;
     }
     #sobre-mim p{
         font-size:1.1em;
@@ -229,8 +237,17 @@ footer{
     #eu{
         flex-direction:column-reverse;
     }
+    #eu img{
+        margin-top:0.5em;
+    }
     #resumo p{
         font-size:1.1em;
+    }
+    #sobre-mim button{
+        background-color:#006400;
+    }
+    #sobre-mim button:hover{
+        background-color:#008000;
     }
     #habilidade{
         gap:1em;
@@ -239,10 +256,12 @@ footer{
         filter:drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.701));
         height:55px; 
     }
+    #projetos{
+        background:linear-gradient(to bottom, #befabe, #f6fef6);
+    }
     #trabalhos{
         width:95%;
         margin:0 auto;
-        background:linear-gradient(to bottom, #f2f2f2, #fff);
         display:flex;
         flex-wrap:nowrap;
         flex-direction:row;
@@ -254,9 +273,6 @@ footer{
     ::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* torna a barra de rolagem transparente */
-    }
-    #projetos{  
-        background-color:#f2f2f2;
     }
     .job{
         width:330px;   
@@ -272,6 +288,26 @@ footer{
     #social{
         align-items:center;
         gap:1.5em;
+    }
+    #social a:hover{
+        background-color:#002400;
+    }
+    footer{
+        background-color:#002400;
+    }
+}
+@media screen and (min-width:801px){
+    #projetos{
+        background:linear-gradient(to bottom, #D8D8D8, #fff);
+    }
+    #eu img{
+        margin-left:1em;
+    }
+    .joboverflow{
+        margin-bottom:7px;
+    }
+    footer{
+        background-color:#000;
     }
 }
 /* KEYFRAMES */
