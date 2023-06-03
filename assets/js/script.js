@@ -17,6 +17,7 @@ function SobreMim(){
     sobreMim.style.height="100vh";
     // criação da minha foto na area sobre mim
     let foto = document.createElement("img");
+    foto.setAttribute("title","Huan Figuereido dev front-end");
     eu.appendChild(foto);
     foto.src="cachorro.png";
     foto.style.marginTop="20px;"
