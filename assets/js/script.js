@@ -1,3 +1,19 @@
+function navegacaoMobile(){
+  if(window.innerWidth<=800){
+    let aria = document.querySelector("#apresentacao");
+    let nav = document.createElement("nav");
+    aria.appendChild(nav);
+    for(let i = 0; i<4; i++){
+      let link = document.createElement("a");
+      nav.appendChild(link);
+    }
+    let linkName = document.querySelectorAll("nav a");
+    linkName[0].innerHTML="Sobre";
+    linkName[1].innerHTML="Habilidades";
+    linkName[2].innerHTML="Projetos";
+    linkName[3].innerHTML="Contato";
+  }
+}
 function SobreMim(){
     let botao=document.getElementById('btn');
     let mais=document.getElementById('maissobremim');

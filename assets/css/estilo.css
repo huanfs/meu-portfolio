@@ -42,6 +42,21 @@ body{
     box-shadow:0;
     font-size:1em;
 }
+#apresentacao nav{
+    height:28px;
+    width:100vw;
+    position:fixed;
+    top:0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2.5em; 
+    background-color:#002400;
+}
+#apresentacao nav a{
+    color:rgb(255, 255, 255);
+    cursor:pointer;
+}
 #apresentacao button:hover{
     background-color:rgb(31, 31, 228);
     cursor:pointer;
@@ -113,7 +128,7 @@ body{
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:0.1em;
+    gap:1em;
 }
 .hab span{
     font:normal 0.8em Arial;
@@ -150,26 +165,50 @@ body{
 } 
 .job{
     width:400px;
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+    padding-bottom:1em;
+    background-color:#00000030;
+    cursor:pointer;
+    border-radius:0px 0px 5px 5px;
 }
 .joboverflow{
     height:200px;
     overflow:hidden;
-    box-shadow:0px 5px 10px #0000006e;
+    box-shadow:0px 1px 3px #000000b6;
 }
 .job img{
     width:400px;
     height:100%;
+    border-radius:5px 5px 0px 0px;
 }
 .job p{
-    font-weight:bold;
+    font-size:1.5em;
+    font-weight:500;
     text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#131212;
 }
 .job h4{
-    text-align:center;
+    display:flex;
+    justify-content:center;
+    gap:1em;
 }
-.separacao{
-    color:rgb(0, 85, 255);
-    margin:0 5px;
+.job h4 span{
+    padding:0.2em 0.5em;
+    border-radius:10px;
+    background-color:#000;
+    color:#fff;
+}
+h4 span:nth-child(1){
+    background-color:rgb(205, 46, 18);
+}
+h4 span:nth-child(2){
+    background-color:rgb(12, 104, 202);
+}
+h4 span:nth-child(3){
+    background-color:rgb(194, 192, 50);
 }
 .job img:hover{
     transition:1s;
@@ -279,11 +318,7 @@ footer{
         flex-direction:column;
         gap:0.5em;
         width:400px;   
-    }.joboverflow{
-        box-shadow:0px 5px 10px #00000068;
-    }
     .job img{
-        border-radius:5px;
         width:400px;
     }
     #contate-me{
@@ -300,6 +335,7 @@ footer{
     footer{
         background-color:#002400;
     }
+}
 }
 @media screen and (min-width:801px){
     #projetos{
