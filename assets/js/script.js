@@ -9,9 +9,13 @@ function navegacaoMobile(){
     }
     let linkName = document.querySelectorAll("nav a");
     linkName[0].innerHTML="Sobre";
+    linkName[0].setAttribute("href","#sobre-mim");
     linkName[1].innerHTML="Habilidades";
+    linkName[1].setAttribute("href","#habilidades");
     linkName[2].innerHTML="Projetos";
+    linkName[2].setAttribute("href","#projetos");
     linkName[3].innerHTML="Contato";
+    linkName[3].setAttribute("href","#contate-me");
   }
 }
 function SobreMim(){
@@ -35,7 +39,7 @@ function SobreMim(){
     let foto = document.createElement("img");
     foto.setAttribute("title","Huan Figuereido dev front-end");
     eu.appendChild(foto);
-    foto.src="cachorro.png";
+    foto.src="eu.jpg";
     foto.style.marginTop="20px;"
     foto.style.filter="drop-shadow:5px 5px 10px;";
     //adicionando animação
